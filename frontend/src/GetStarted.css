@@ -1,0 +1,145 @@
+.landing-screen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--paper);
+    color: var(--ink);
+}
+
+.landing-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 6%;
+}
+
+.landing-brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-size: 13px;
+    line-height: 1.05;
+    letter-spacing: .02em;
+}
+
+.landing-brand strong {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.landing-brand-mark {
+    width: 35px;
+    height: 35px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(155deg, #d7e8c0 0%, #c7dba9 100%);
+    color: #173d30;
+    border-radius: 9px;
+    box-shadow: 0 3px 10px rgba(199, 219, 169, .25);
+}
+
+.landing-hero {
+    max-width: 720px;
+    margin: 40px auto 0;
+    padding: 20px 6% 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing-hero .eyebrow {
+    margin: 0 0 14px;
+}
+
+.landing-hero h1 {
+    margin: 0 0 18px;
+    font: 500 44px/1.2 Georgia, serif;
+    letter-spacing: -.01em;
+}
+
+.landing-lede {
+    max-width: 520px;
+    margin: 0 0 34px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.landing-cta-row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.landing-cta {
+    padding: 14px 22px;
+    font-size: 13px;
+}
+
+.landing-features {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 6% 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.landing-feature {
+    padding: 24px 22px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.landing-feature:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.landing-feature-icon {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    margin-bottom: 16px;
+    background: linear-gradient(155deg, #f0f4ef 0%, #e4ede1 100%);
+    color: var(--green);
+    border-radius: 8px;
+}
+
+.landing-feature h3 {
+    margin: 0 0 8px;
+    font: 500 16px Georgia, serif;
+}
+
+.landing-feature p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.landing-footer {
+    margin-top: auto;
+    padding: 22px 6%;
+    text-align: center;
+    color: #9aa69d;
+    font-size: 12px;
+    border-top: 1px solid var(--line);
+}
+
+@media (max-width: 760px) {
+    .landing-hero h1 {
+        font-size: 32px;
+    }
+
+    .landing-features {
+        grid-template-columns: 1fr;
+    }
+}
